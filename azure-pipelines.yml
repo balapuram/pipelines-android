@@ -31,4 +31,12 @@ steps:
     pathToPublish: '$(build.artifactStagingDirectory)'
     artifactName: 'drop'
     artifactType: 'container'
-  displayName: Publish artifacts
+  displayName: Publish artifacts 
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo $(build.artifactStagingDirectory)
+      
+      cd $(build.artifactStagingDirectory)
+      
+      ls -ltr'
