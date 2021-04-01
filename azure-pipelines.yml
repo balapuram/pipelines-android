@@ -39,4 +39,4 @@ steps:
       
       cd $(build.artifactStagingDirectory)
       
-      ls -ltr'
+      ls -ltr
