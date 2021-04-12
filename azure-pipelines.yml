@@ -35,11 +35,21 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
+
       echo $(build.artifactStagingDirectory)
       
       cd $(build.artifactStagingDirectory)/app/build/outputs/apk
       
       ls -ltr
-
+- task: AppCenterDistribute@3
+  inputs:
+    serverEndpoint: 'AppCenterConnection'
+    appSlug: 'https://appcenter.ms/orgs/TESTING-B/applications'
+    appFile: '$(build.artifactStagingDirectory)/app/build/outputs/apk'
+    buildVersion: '1.0'
+    symbolsOption: 'Android'
+    releaseNotesOption: 'input'
+    releaseNotesInput: 'This is testing'
+    destinationType: 'groups'
 
       
