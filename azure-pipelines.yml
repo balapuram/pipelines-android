@@ -40,3 +40,5 @@ steps:
       cd $(build.artifactStagingDirectory)
       
       ls -ltr
+
+      tree
