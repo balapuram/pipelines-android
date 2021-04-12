@@ -32,15 +32,12 @@ steps:
     artifactName: 'drop'
     artifactType: 'container'
   displayName: Publish artifacts 
-- task: CmdLine@2
-  inputs:
-    script: |
-
-      echo $(build.artifactStagingDirectory)
-      
-      cd $(build.artifactStagingDirectory)/app/build/outputs/apk
-      
-      ls -ltr
+# - task: CmdLine@2
+#   inputs:
+#     script: |
+#       echo $(build.artifactStagingDirectory)      
+#       cd $(build.artifactStagingDirectory)/app/build/outputs/apk     
+#       ls -ltr
 - task: AppCenterDistribute@3
   inputs:
     serverEndpoint: 'AppCenterConnection'
