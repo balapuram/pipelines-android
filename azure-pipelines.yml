@@ -33,12 +33,6 @@ steps:
     artifactName: 'drop'
     artifactType: 'container'
   displayName: Publish artifacts 
-# - task: CmdLine@2
-#   inputs:
-#     script: |
-#       echo $(build.artifactStagingDirectory)      
-#       cd $(build.artifactStagingDirectory)/app/build/outputs/apk     
-#       ls -ltr
 - task: AppCenterDistribute@3
   inputs:
     serverEndpoint: 'AppCenterConnection'
@@ -49,5 +43,6 @@ steps:
     releaseNotesOption: 'input'
     releaseNotesInput: 'This is testing'
     destinationType: 'groups'
+    destinationGroupIds: 'Beta Testers'
 
       
