@@ -37,8 +37,9 @@ steps:
     script: |
       echo $(build.artifactStagingDirectory)
       
-      cd $(build.artifactStagingDirectory)
+      cd $(build.artifactStagingDirectory)/app
       
       ls -ltr
 
-      tree
+
+      
