@@ -36,13 +36,13 @@ steps:
 - task: AppCenterDistribute@3
   inputs:
     serverEndpoint: 'AppCenterConnection'
-    appSlug: 'https://appcenter.ms/orgs/TESTING-B/apps/myapp'
+    appSlug: 'https://appcenter.ms/users/balapuram.b-gmail.com/apps/myapp'
     appFile: '$(build.artifactStagingDirectory)/app/build/outputs/apk'
     buildVersion: '1.0'
     symbolsOption: 'Android'
     releaseNotesOption: 'input'
     releaseNotesInput: 'This is testing'
     destinationType: 'groups'
-    destinationGroupIds: 'Beta Testers'
+    destinationGroupIds: 'Testers'
 
       
