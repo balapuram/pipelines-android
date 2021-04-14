@@ -37,7 +37,7 @@ steps:
   inputs:
     serverEndpoint: 'AppCentreConnection'
     appSlug: 'Tesco-Pay-1/Pipeline-testing'
-    appFile: '$(build.artifactStagingDirectory)/app/build/outputs/apk'
+    appFile: '**/*.apk'
     buildVersion: '1.0'
     symbolsOption: 'Android'
     releaseNotesOption: 'input'
