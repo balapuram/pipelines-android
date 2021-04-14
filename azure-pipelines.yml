@@ -43,6 +43,6 @@ steps:
     releaseNotesOption: 'input'
     releaseNotesInput: 'This is testing'
     destinationType: 'groups'
-    destinationGroupIds: 'Testers'
+    destinationGroupIds: 'fb8f8e95-820f-40ce-8657-aca183c31ad7'
 
       
