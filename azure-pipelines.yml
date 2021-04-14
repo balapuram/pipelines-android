@@ -35,7 +35,7 @@ steps:
   displayName: Publish artifacts 
 - task: AppCenterDistribute@3
   inputs:
-    serverEndpoint: 'AppCenterConnection'
+    serverEndpoint: 'AppCentreConnection'
     appSlug: 'https://appcenter.ms/users/balapuram.b-gmail.com/apps/myapp'
     appFile: '$(build.artifactStagingDirectory)/app/build/outputs/apk'
     buildVersion: '1.0'
