@@ -9,6 +9,8 @@ variables:
    value: Tesco-Pay-1/Pipeline-testing
  - name: dev-groupID
    value: fb8f8e95-820f-40ce-8657-aca183c31ad7
+ - name: releaseNote
+   value: Testing
 extends:
   template: templates/common.yaml
 
