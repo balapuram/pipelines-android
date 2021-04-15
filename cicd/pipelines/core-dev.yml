@@ -4,9 +4,11 @@ pool:
   vmImage: 'macOS-latest'
 
 variables:
+ - name: serviceConnection
+   value: AppCenterConnection
  - name: appBucket
    value: Tesco-Pay-1/Pipeline-testing
- - name: dev-groupID
+ - name: groupId
    value: fb8f8e95-820f-40ce-8657-aca183c31ad7
  - name: releaseNote
    value: Testing
