@@ -1,0 +1,15 @@
+trigger: none
+
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+
+variables:
+ - name: appBucket
+   value: Tesco-Pay-1/Pipeline-testing
+ - name: dev-groupID
+   value: fb8f8e95-820f-40ce-8657-aca183c31ad7
+extends:
+  template: templates/common.yaml
+
+      

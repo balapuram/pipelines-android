@@ -1,0 +1,38 @@
+steps:
+  - task: Gradle@2
+    displayName: gradlew assembleDebug test
+    inputs:
+      workingDirectory: ''
+      gradleWrapperFile: 'gradlew'
+      gradleOptions: '-Xmx3072m'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      tasks: 'assembleDebug test'
+
+  - task: AppCenterDistribute@3
+    displayName: Upload app to app center
+    inputs:
+      serverEndpoint: 'AppCentreConnection'
+      appSlug: '$(appBucket)'
+      appFile: '**/*prod-debug.apk'
+      buildVersion: '2.0'
+      symbolsOption: 'Android'
+      destinationType: 'groups'
+      destinationGroupIds: '$(dev-groupID)'
+      releaseNotesOption: 'input'
+      releaseNotesInput:  |+
+        - $(Build.SourceVersionMessage)
+        ---
+        **Build Details**
+        =================
+        - **Project**         : $(System.TeamProject)
+        - **Build Pipeline**  : $(Build.DefinitionName)
+        - **Build Number**    : $(build.buildNumber)
+        - **Build started**   : $(system.pipelineStartTime)
+        - **Build Reason**    : $(Build.Reason)
+        - **Source Branch**   : $(build.sourceBranch)
+        - **Source CommitId** : $(Build.SourceVersion)
+        - **Addtional Info**  : ${{parameters.releaseNote}}
