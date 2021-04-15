@@ -1,6 +1,6 @@
 steps:
   - task: Gradle@2
-    displayName: gradlew assembleDebug test
+    displayName: Build mobile app
     inputs:
       workingDirectory: ''
       gradleWrapperFile: 'gradlew'
@@ -15,10 +15,9 @@ steps:
   - task: AppCenterDistribute@3
     displayName: Upload app to app center
     inputs:
-      serverEndpoint: 'AppCentreConnection'
+      serverEndpoint: 'AppCenterConnection'
       appSlug: '$(appBucket)'
       appFile: '**/*prod-debug.apk'
-      buildVersion: '2.0'
       symbolsOption: 'Android'
       destinationType: 'groups'
       destinationGroupIds: '$(dev-groupID)'

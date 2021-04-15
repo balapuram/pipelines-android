@@ -3,7 +3,6 @@ trigger: none
 pool:
   vmImage: 'macOS-latest'
 
-
 variables:
  - name: appBucket
    value: Tesco-Pay-1/Pipeline-testing
