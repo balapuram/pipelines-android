@@ -1,3 +1,8 @@
+parameters:
+- name: releaseNotes
+  type: string
+  default: Release
+
 steps:
   - task: Gradle@2
     displayName: Build mobile app
