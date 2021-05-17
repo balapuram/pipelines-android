@@ -1,7 +1,8 @@
 parameters:
 - name: releaseNotes
+  displayName: releaseNotes
   type: string
-  default: a string
+  default: string
 
 steps:
   - task: Gradle@2
