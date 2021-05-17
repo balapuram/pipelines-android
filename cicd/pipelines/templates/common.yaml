@@ -34,8 +34,10 @@ steps:
         - **Build Reason**    : $(Build.Reason)
         - **Source Branch**   : $(build.sourceBranch)
         - **Source CommitId** : $(Build.SourceVersion)
-        - **Addtional Info**  : 'RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6
-                                  Bounty SDK v 0.2.3
-
-                                  TPP 9623 - new feature flags
-                                  TPP 9625 - Add card configuration '
+        - **Addtional Info**  : RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6
+                                Bounty SDK v 0.2.3
+                                TPP 9623 - new feature flags
+                                TPP 9625 - Add card configuration
+                                Bhaskar
+                                Balapuram
+                                TPP-4455
