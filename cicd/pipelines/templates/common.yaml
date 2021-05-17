@@ -2,7 +2,11 @@ parameters:
 - name: releaseNotes
   displayName: releaseNotes
   type: string
+  values: 'RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6
+           Bounty SDK v 0.2.3
 
+           TPP 9623 - new feature flags
+           TPP 9625 - Add card configuration '
 
 steps:
   - task: Gradle@2

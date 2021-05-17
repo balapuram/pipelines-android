@@ -12,12 +12,7 @@ variables:
    value: df4a749b-d29a-489b-ae0a-422ec2b60ba9
 extends:
   template: templates/common.yaml
-  parameters:
-  releaseNotes: 'RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 RC 6 
-                 Bounty SDK v 0.2.3
 
-                 TPP 9623 - new feature flags
-                 TPP 9625 - Add card configuration '
     
 
       
