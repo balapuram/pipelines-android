@@ -9,7 +9,7 @@ variables:
  - name: appBucket
    value: Tesco-Pay-1/Pipeline-testing
  - name: groupId
-   value: fb8f8e95-820f-40ce-8657-aca183c31ad7
+   value: df4a749b-d29a-489b-ae0a-422ec2b60ba9
 extends:
   template: templates/common.yaml
 
