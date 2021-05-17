@@ -34,4 +34,4 @@ steps:
         - **Build Reason**    : $(Build.Reason)
         - **Source Branch**   : $(build.sourceBranch)
         - **Source CommitId** : $(Build.SourceVersion)
-        - **Release Notes **  : 
+        - **Release Notes**  : 
