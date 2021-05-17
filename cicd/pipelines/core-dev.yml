@@ -12,5 +12,8 @@ variables:
    value: df4a749b-d29a-489b-ae0a-422ec2b60ba9
 extends:
   template: templates/common.yaml
+  parameters:
+  releaseNotes: ''
+    
 
       
