@@ -38,4 +38,4 @@ steps:
         - **Build Reason**    : $(Build.Reason)
         - **Source Branch**   : $(build.sourceBranch)
         - **Source CommitId** : $(Build.SourceVersion)
-        - **Addtional Info**  : $(releaseNote)
+        - **Addtional Info**  : ${{parameters.releaseNotes}}
